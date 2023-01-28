@@ -1,8 +1,128 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
+:root {
+    --pri: #000;
+    --sec: #1c5d99;
+    --ter: #fff;
+    --qua: #e6e8e6;
+    --qui: #ced0ce;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+header {}
+
+main {
+    margin: 1rem;
+}
+
+footer {
+    background-color: var(--qui);
+    min-height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-direitos b, span{
+    color: var(--pri);
+}
+
+/* Hero IMG */
+
+.bg-image {
+    /* a imagem usada */
+    background-image: url("https://source.unsplash.com/random/1920x1080/?robot");
+    /* Add the blur effect */
+    /* filter: blur(8px); */
+    height: 12rem;
+    /* centraliza e aumenta a imagem suavemente */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* posiciona o texto */
+.bg-text {
+    background-color: var(--pri);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/opacity/see-through */
+    color: var(--ter);
+    font-weight: bold;
+    border: 3px solid var(--ter);
+    z-index: 2;
+    width: 80%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.bg-text p {
+    color: var(--ter);
+}
+
+/* Cards */
+
+.container-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-cards a {
+    display: contents;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 25%;
+    background-color: var(--qua);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--qua);
+    text-align: center;
+}
+
+.card .container b, p{
+    color: var(--pri);
+}
+
+.card img {
+    border-radius: 5px 5px 0 0;
+}
+
+@media only screen and (max-width: 600px){
+    .card {
+        width: 100%;
+    }
+
 }
