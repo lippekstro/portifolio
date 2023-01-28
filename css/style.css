@@ -28,6 +28,9 @@ header {
 
 main {
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -36,9 +39,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 
@@ -74,8 +74,11 @@ footer {
 }
 
 nav {
+    background-color: var(--sec);
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
@@ -132,7 +135,8 @@ nav li:hover {
     text-align: center;
 }
 
-.card .container b, p{
+.card .container b,
+p {
     color: var(--pri);
 }
 
@@ -140,7 +144,7 @@ nav li:hover {
     border-radius: 5px 5px 0 0;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .card {
         width: 100%;
     }
