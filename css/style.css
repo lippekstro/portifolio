@@ -76,7 +76,6 @@ footer {
 nav {
     display: flex;
     justify-content: flex-end;
-    margin: 1rem;
 }
 
 nav ul {
@@ -90,15 +89,15 @@ nav li {
 
 nav a {
     text-decoration: none;
-    margin: 1rem;
 }
 
 nav li:hover {
     background-color: var(--qui);
 }
 
-nav a:hover {
-    color: var(--pri);
+.icon-menu {
+    display: flex;
+    align-items: center;
 }
 
 /* Cards */
