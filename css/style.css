@@ -28,11 +28,12 @@ header {
 }
 
 main {
-    margin: 1rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    width: 60%;
 }
 
 section {
@@ -215,6 +216,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+
     .card {
         width: 100%;
     }
