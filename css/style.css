@@ -65,7 +65,6 @@ footer {
 
 
 /* Hero IMG */
-
 .bg-image {
     background-image: url("../img/programador3.jpg");
     filter: blur(8px);
@@ -102,9 +101,11 @@ nav {
     background-color: var(--sec);
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
+    flex-wrap: wrap;
 }
 
 nav ul {
@@ -129,8 +130,30 @@ nav li:hover {
     align-items: center;
 }
 
-/* Cards */
+/* Menu Lateral */
+/* .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--pri);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
 
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+ */
+
+/* Cards */
 .container-cards {
     display: flex;
     justify-content: space-evenly;
@@ -216,6 +239,10 @@ p {
 }
 
 @media only screen and (max-width: 600px) {
+    nav {
+        font-size: small;
+    }
+
     main {
         width: 100%;
     }
