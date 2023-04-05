@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luis Fellipe">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://ajax.googleapis.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://ssl.gstatic.com https://www.gstatic.com https://*.googleusercontent.com;">
+    <meta name="description"
+        content="Conheça o portfólio de Lippekstro - engenheiro de software. Veja seus projetos e habilidades em HTML, CSS, JavaScript, PHP e outras.">
     <title>Portifolio Lippe</title>
     <link rel="shortcut icon" href="img/code.svg" type="image/x-icon">
     <link rel="stylesheet"
@@ -60,9 +64,9 @@
 
     <main id="main">
         <section id="projetos">
-            <div>
+            <header>
                 <h1>PROJETOS</h1>
-            </div>
+            </header>
             <div class="container-cards">
                 <a href="http://portifoliolippe.infinityfreeapp.com/poke_api/index.php" target="_blank">
                     <div class="card">
@@ -70,7 +74,7 @@
                             <img src="img/poke_api.png" alt="Thumbnail" width="100%" height="auto">
                         </figure>
                         <div class="container">
-                            <h4><b>Poke Api</b></h4>
+                            <h2>Poke Api</h2>
                             <p>Um site consumindo uma API e exibindo os dados</p>
                         </div>
                     </div>
@@ -81,7 +85,7 @@
                             <img src="img/todo.png" alt="Thumbnail" width="100%" height="auto">
                         </figure>
                         <div class="container">
-                            <h4><b>Listas</b></h4>
+                            <h2>Listas</h2>
                             <p>Um site ao estilo Todo List</p>
                         </div>
                     </div>
@@ -92,7 +96,7 @@
                             <img src="img/global_news.png" alt="Thumbnail" width="100%" height="auto">
                         </figure>
                         <div class="container">
-                            <h4><b>Global News</b></h4>
+                            <h2>Global News</h2>
                             <p>Um site ao estilo Blog de Notícias</p>
                         </div>
                     </div>
@@ -103,7 +107,7 @@
                             <img src="img/touristic.jpg" alt="Thumbnail" width="100%" height="auto">
                         </figure>
                         <div class="container">
-                            <h4><b>Touristic</b></h4>
+                            <h2>Touristic</h2>
                             <p>Um site ao estilo Guia Turistico</p>
                         </div>
                     </div>
@@ -112,9 +116,9 @@
         </section>
 
         <section id="habilidades">
-            <div>
+            <header>
                 <h1>LINGUAGENS</h1>
-            </div>
+            </header>
 
             <div class="container-logos">
                 <div class="logo">
@@ -219,9 +223,10 @@
         </section>
 
         <section id="frameworks">
-            <div>
+            <header>
                 <h1>FRAMEWORKS</h1>
-            </div>
+            </header>
+
             <div class="container-logos">
                 <div class="logo">
                     <div class="dropdown">
