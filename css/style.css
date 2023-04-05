@@ -71,7 +71,7 @@ footer {
 
 /* Hero IMG */
 .bg-image {
-    background-image: url("../img/programador3.jpg");
+    background-image: url("../img/programador3.webp");
     filter: blur(8px);
     height: 12rem;
     background-position: center;
