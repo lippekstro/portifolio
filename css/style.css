@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
     --pri: #000;
@@ -42,6 +42,7 @@ main {
 
 section {
     margin: 1rem;
+    padding-top: 6rem;
 }
 
 footer {
@@ -112,20 +113,15 @@ nav {
     flex-wrap: wrap;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-nav li {
-    padding: 1rem;
-}
-
-nav a {
+a {
     text-decoration: none;
 }
 
-nav li:hover {
+.menu-item {
+    padding: 1rem;
+}
+
+.menu-item:hover {
     background-color: var(--qui);
 }
 
@@ -133,29 +129,6 @@ nav li:hover {
     display: flex;
     align-items: center;
 }
-
-/* Menu Lateral */
-/* .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: var(--pri);
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
- */
 
 /* Cards */
 .container-cards {
@@ -242,6 +215,25 @@ p {
     display: block;
 }
 
+.btn {
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    color: black;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.btn-confirma {
+    background-color: teal;
+    color: white;
+}
+
+.btn-confirma:hover {
+    background-color: rgba(0, 128, 128, 0.5);
+}
+
 @media only screen and (max-width: 600px) {
     nav {
         font-size: small;
@@ -249,6 +241,10 @@ p {
 
     main {
         width: 100%;
+    }
+
+    section {
+        padding-top: 10rem;
     }
 
     .card {
